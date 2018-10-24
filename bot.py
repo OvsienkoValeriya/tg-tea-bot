@@ -14,7 +14,7 @@ def send_welcome(message):
 def send_message(message):
     chat_id= message.chat.id
     bot.send_message(chat_id, "Отлично:" + message.text)
-    if chat_id=="Я Саша":
+    if message.chat.id=="Я Саша":
         bot.send_message(chat_id, "Рекомендую выпить виски")
 
 bot.polling()
