@@ -22,12 +22,7 @@ def tea_menu_make_markup():
     itembtn_shen = types.KeyboardButton ("Шен Пуэр")
     itembtn_shu = types.KeyboardButton ("Шу Пуэр")
     itembtn_black = types.KeyboardButton ("Чёрный Хэй Ча")
-    itembtn_help = types.KeyboardButton ("Помогите, я ничего не понимаю")
+    itembtn_help = types.KeyboardButton ("Что?")
     markup.add (itembtn_green, itembtn_white, itembtn_hell_turquois, itembtn_dark_turquois, itembtn_red, itembtn_shen, itembtn_shu, itembtn_black, itembtn_help)
     return markup
 
-def silly_markup():
-    markup= types.ReplyKeyboardMarkup (row_width=1)
-    itembtn_green = types.KeyboardButton("Зеленый")
-    markup.add(itembtn_green)
-    return markup
