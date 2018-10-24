@@ -6,11 +6,13 @@ bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    bot.send_message(message, "Привет, какого хочешь чаю?")
+    chat_id= message.chat.id
+    bot.send_message(chat.id, "Привет, какого хочешь чаю?")
 
 
 @bot.message_handler(func=lambda m: True)
 def send_message(message):
-    bot.send_message(message, "Отлично:" + message.text)
+    chat_id= message.chat.id
+    bot.send_message(chat.id, "Отлично:" + message.text)
 
 bot.polling()
