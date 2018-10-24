@@ -11,7 +11,7 @@ def send_welcome(message):
     chat_id= message.chat.id
     bot.send_message(chat_id, "Привет, какого хочешь чаю?")
 
-@bot.message_handler(commands=['tea_menu'], func=tea_menu_predicate)
+@bot.message_handler(commands=['tea_menu'])
 def send_tea_menu(message):
     chat_id = message.chat.id
     bot.send_message(chat_id, "Выбери вариант")
