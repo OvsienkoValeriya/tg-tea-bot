@@ -21,7 +21,7 @@ def send_tea_menu(message):
 @bot.message_handler(func=tea_menu_choose_predicate)
 def send_tea_menu_choose(message):
     chat_id = message.chat.id
-    bot.send_message(chat_id, reply_markup=handle_tea_type())
+    bot.send_message(chat_id, text = handle_tea_type(message.text))
 
 
 
