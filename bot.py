@@ -23,7 +23,7 @@ def send_easter_egg(message):
     bot.send_message(chat_id, "Тогда пей вискарь и не выебывайся")
 
 
-@bot.message_handler(func=lambda m: True)
+@bot.message_handler(func=lambda m: not tea_menu_predicate(m))
 def send_message(message):
     chat_id= message.chat.id
     bot.send_message(chat_id, "Отлично:" + message.text)
