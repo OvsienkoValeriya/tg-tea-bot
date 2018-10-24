@@ -6,7 +6,7 @@ bot = telebot.TeleBot(TOKEN)
 
 
 def tea_menu_predicate(message):
-    text = message.text.lowercase()
+    text = message.text.lower()
     return text == "какой бывает чай?" or \
         text == "какой чай бывает?" or \
         text == "не знаю"
