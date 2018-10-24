@@ -18,6 +18,13 @@ def send_tea_menu(message):
     bot.send_message(chat_id, "Выбери вариант", reply_markup=tea_menu_make_markup() )
 
 
+@bot.message_handler(func=tea_menu_choose_predicate)
+def send_tea_menu_choose(message):
+    chat_id = message.chat.id
+    bot.send_message(chat_id, reply_markup=handle_tea_type())
+
+
+
 @bot.message_handler(regexp="(Я|я) (С|с)аша")
 def send_easter_egg(message):
     chat_id = message.chat.id
