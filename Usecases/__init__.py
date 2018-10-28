@@ -73,6 +73,7 @@ def capitalize_all(lst):
         capitalized_lst.append(word.capitalize())
     return capitalized_lst
 
+
 #
 # меню по категориям подбора
 #

@@ -5,6 +5,16 @@ from Usecases import *
 TOKEN = "789845045:AAF4GvK-9DYhedra0Vc47ZPKku93KjNmUAQ"
 bot = telebot.TeleBot(TOKEN)
 
+@bot.message_handler(commands=['help'])
+def send_help(message):
+    chat_id = message.chat.id
+    bot.send_message(chat_id, "Вот что я умею:\n"+\
+                              "/start - Начни чайное путешествие\n"+\
+                              "/by_category - Расскажу о разных видах чая\n"+\
+                              "/by_flavour - Подберу чай по вкусу\n"+\
+                              "/by_condition - Помогу достичь чайного состояния\n"+\
+                              "/by_same - Подберу чай по вашим личным предпочтениям\n"+\
+                              "/help - Еще раз расскажу о том, что умею\n")
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
