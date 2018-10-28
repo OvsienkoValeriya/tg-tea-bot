@@ -66,6 +66,12 @@ def fill_markup_with_words(markup, lst):
         markup.add(types.KeyboardButton(word))
     return markup
 
+#все пишем с большой буквы
+def capitalize_all(lst):
+    capitalized_lst = []
+    for word in lst:
+        capitalized_lst.append(word.capitalize())
+    return capitalized_lst
 
 #
 # меню по категориям подбора
@@ -74,7 +80,7 @@ def fill_markup_with_words(markup, lst):
 def tea_choose_make_markup():
     markup = types.ReplyKeyboardMarkup(row_width=2)
     tea_choose = [TEA_CHOOSE_CATEGORY, TEA_CHOOSE_FLAVOUR, TEA_CHOOSE_CONDITION, TEA_CHOOSE_RELATED]
-    return fill_markup_with_words(markup, tea_choose)
+    return fill_markup_with_words(markup, capitalize_all(tea_choose))
 
 
 tea_menu_predicate = make_word_in_list_predicate([TEA_CHOOSE_CATEGORY])
@@ -84,10 +90,7 @@ tea_menu_predicate = make_word_in_list_predicate([TEA_CHOOSE_CATEGORY])
 def tea_menu_make_markup():
     markup = types.ReplyKeyboardMarkup(row_width=3)
     tea_words = [GREEN, WHITE, HELL_TURQUOIS, DARK_TURQUOIS, RED, SHEN, SHU, BLACK, YELLOW]
-    capitalized_tea_words = []
-    for tea_word in tea_words:
-        capitalized_tea_words.append(tea_word.capitalize())
-    return fill_markup_with_words(markup, capitalized_tea_words)
+    return fill_markup_with_words(markup, capitalize_all(tea_words))
 
 
 tea_menu_choose_predicate = make_word_in_list_predicate(
@@ -104,10 +107,7 @@ def handle_tea_type(message: str):
 def tea_flavour_make_markup():
     markup = types.ReplyKeyboardMarkup(row_width=3)
     tea_flavours = [VEGAN, SWEET, BERRY, FRUIT, FLOWER, VEGETABLE, NUTS, SPICY, TREE]
-    capitalized_tea_flavours = []
-    for tea_flavour in tea_flavours:
-        capitalized_tea_flavours.append(tea_flavour.capitalize())
-    return fill_markup_with_words(markup, capitalized_tea_flavours)
+    return fill_markup_with_words(markup, capitalize_all(tea_flavours))
 
 
 tea_flavour_predicate = make_word_in_list_predicate([TEA_CHOOSE_FLAVOUR])
@@ -127,10 +127,7 @@ tea_condition_predicate = make_word_in_list_predicate([TEA_CHOOSE_CONDITION])
 def tea_condition_make_markup():
     markup = types.ReplyKeyboardMarkup(row_width=2)
     tea_conditions = [ALIVE, QUIET]
-    capitalized_tea_conditions = []
-    for tea_condition in tea_conditions:
-        capitalized_tea_conditions.append(tea_condition.capitalize())
-    return fill_markup_with_words(markup, capitalized_tea_conditions)
+    return fill_markup_with_words(markup, capitalize_all(tea_conditions))
 
 tea_condition_choose_predicate = make_word_in_list_predicate([ALIVE, QUIET])
 
@@ -139,5 +136,5 @@ def handle_tea_condition(message:str):
     text = message.lower()
     return TEA_CONDITION[text]
 
-#меню по стостоянию
+#меню по похожим
 tea_related_predicate = make_word_in_list_predicate([TEA_CHOOSE_RELATED])
