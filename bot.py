@@ -44,6 +44,12 @@ def send_predicate_menu(message):
     chat_id = message.chat.id
     bot.send_message(chat_id, "Тогда выбери категорию", reply_markup=tea_condition_make_markup())
 
+#по состоянию. показывает текст
+@bot.message_handler(func=tea_condition_choose_predicate)
+def send_tea_condition(message):
+    chat_id = message.chat.id
+    bot.send_message(chat_id, text=handle_tea_condition(message.text))
+
 #по похожему
 @bot.message_handler(commands = ['by_same'])
 @bot.message_handler(func=tea_related_predicate)
