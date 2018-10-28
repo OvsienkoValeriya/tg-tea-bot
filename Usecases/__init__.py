@@ -62,8 +62,10 @@ def make_word_in_list_predicate(lst):
 
 # делаем из списка слов кнопки и добавляем их в markup
 def fill_markup_with_words(markup, lst):
+    list_of_buttons = []
     for word in lst:
-        markup.add(types.KeyboardButton(word))
+        list_of_buttons.append(types.KeyboardButton(word))
+    markup.add(list_of_buttons)
     return markup
 
 #все пишем с большой буквы
