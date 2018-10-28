@@ -45,8 +45,8 @@ def send_predicate_menu(message):
     bot.send_message(chat_id, "Тогда выбери категорию", reply_markup=tea_condition_make_markup())
 
 #по похожему
-@bot.message.handler(commands = ['by_same'])
-@bot.message.hangler(func=tea_related_predicate)
+@bot.message_handler(commands = ['by_same'])
+@bot.message_handler(func=tea_related_predicate)
 def send_sorry(message):
     chat_id = message.chat.id
     bot.send_message(chat_id, "Раздел находится в разработке")
