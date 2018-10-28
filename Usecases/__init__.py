@@ -27,15 +27,15 @@ TEA_CHOOSE_FLAVOUR = "по вкусу"
 TEA_CHOOSE_CONDITION = "по состоянию"
 TEA_CHOOSE_RELATED = "по похожему"
 
-VEGAN = "растительный",
-SWEET = "сладко-кондитерский",
-BERRY = "кисло-ягодный",
-FRUIT = "фруктовый",
-FLOWER = "цветочный",
-VEGETABLE = "овощной",
-NUTS = "ореховый",
-SPICY = "пряный",
-TREE = "древесный",
+VEGAN = "растительный"
+SWEET = "сладко-кондитерский"
+BERRY = "кисло-ягодный"
+FRUIT = "фруктовый"
+FLOWER = "цветочный"
+VEGETABLE = "овощной"
+NUTS = "ореховый"
+SPICY = "пряный"
+TREE = "древесный"
 
 TEA_FLAVOUR = {
     VEGAN: "Пей зелёнку",
@@ -125,6 +125,7 @@ def handle_tea_flavour(message: str):
 tea_condition_predicate = make_word_in_list_predicate([TEA_CHOOSE_CONDITION])
 
 def tea_condition_make_markup():
+    markup = types.ReplyKeyboardMarkup(row_width=2)
     tea_conditions = [ALIVE, QUIET]
     capitalized_tea_conditions = []
     for tea_condition in tea_conditions:
