@@ -65,7 +65,7 @@ def fill_markup_with_words(markup, lst):
     list_of_buttons = []
     for word in lst:
         list_of_buttons.append(types.KeyboardButton(word))
-    markup.add(list_of_buttons)
+    markup.add(*list_of_buttons)
     return markup
 
 #все пишем с большой буквы
