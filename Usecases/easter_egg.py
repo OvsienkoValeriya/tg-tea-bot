@@ -1,6 +1,6 @@
 from Usecases import *
 
-predicate = make_word_in_list_predicate(["Я Саша"])
+predicate = make_word_in_list_predicate(["я саша"])
 
 
 def handle():
