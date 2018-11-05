@@ -2,7 +2,7 @@ from telebot import types
 
 
 def make_word_in_list_predicate(lst):
-    return lambda message: message.text.lower() in lst
+    return lambda message: message.text is not None and message.text.lower() in lst
 
 
 # делаем из списка слов кнопки и добавляем их в markup
