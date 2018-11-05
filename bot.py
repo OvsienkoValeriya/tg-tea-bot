@@ -9,6 +9,7 @@ import Usecases.flavour_description
 import Usecases.help
 import Usecases.welcome
 import Usecases.sameness_choose
+import Usecases.logger
 
 TOKEN = "789845045:AAF4GvK-9DYhedra0Vc47ZPKku93KjNmUAQ"
 bot = telebot.TeleBot(TOKEN)
@@ -94,6 +95,10 @@ def send_easter_egg(message):
     chat_id = message.chat.id
     bot.send_message(chat_id, Usecases.easter_egg.handle(), reply_markup=Usecases.easter_egg.markup())
 
+bot.add_message_handler({
+            'function': Usecases.logger.log_message,
+            'filters':{}
+        })
 
 # запускает бота
 bot.polling()
