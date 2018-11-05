@@ -8,7 +8,7 @@ def handle():
 
 
 def commands():
-    return ["Peshkov"]
+    return ["peshkov"]
 
 
 def markup():
