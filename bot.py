@@ -93,8 +93,11 @@ def send_easter_egg(message):
 
 @bot.message_handler(func=Usecases.logger.predicate)
 def log_message(message):
-    Usecases.logger.log_message(message)
+    Usecases.logger.log_unresolved_message(message)
 
+@bot.callback_query_handler(func=lambda call: True)
+def test_callback(call):
+    Usecases.logger.log_message(call)
 
 # запускает бота
 bot.polling()
