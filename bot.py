@@ -1,3 +1,4 @@
+import telebot
 import Usecases.category_choose
 import Usecases.category_description
 import Usecases.condition_choose
@@ -7,6 +8,7 @@ import Usecases.flavour_choose
 import Usecases.flavour_description
 import Usecases.help
 import Usecases.welcome
+import Usecases.sameness_choose
 from Usecases import *
 
 TOKEN = "789845045:AAF4GvK-9DYhedra0Vc47ZPKku93KjNmUAQ"
@@ -79,11 +81,11 @@ def send_tea_condition(message):
 
 
 # по похожему
-@bot.message_handler(commands=['by_same'])
-@bot.message_handler(func=tea_related_predicate)
+@bot.message_handler(commands=Usecases.sameness_choose.commands())
+@bot.message_handler(func=Usecases.sameness_choose.predicate)
 def send_sorry(message):
     chat_id = message.chat.id
-    bot.send_message(chat_id, "Раздел находится в разработке")
+    bot.send_message(chat_id, Usecases.sameness_choose.handle(), reply_markup=Usecases.sameness_choose.markup())
 
 
 # пасхалка
