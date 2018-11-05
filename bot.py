@@ -9,7 +9,6 @@ import Usecases.flavour_description
 import Usecases.help
 import Usecases.welcome
 import Usecases.sameness_choose
-from Usecases import *
 
 TOKEN = "789845045:AAF4GvK-9DYhedra0Vc47ZPKku93KjNmUAQ"
 bot = telebot.TeleBot(TOKEN)
@@ -73,7 +72,7 @@ def send_predicate_menu(message):
 
 # по состоянию. показывает текст
 @bot.message_handler(func=Usecases.condition_description.predicate)
-@bot.massage_handler(commands=Usecases.condition_description.commands())
+@bot.message_handler(commands=Usecases.condition_description.commands())
 def send_tea_condition(message):
     chat_id = message.chat.id
     bot.send_message(chat_id, text=Usecases.condition_description.handle(message.text),
