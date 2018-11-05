@@ -89,16 +89,17 @@ def send_sorry(message):
 
 
 # пасхалка
-@bot.message_handler(func=Usecases.easter_egg)
+@bot.message_handler(func=Usecases.easter_egg.predicate)
 @bot.message_handler(commands=Usecases.easter_egg.commands())
 def send_easter_egg(message):
     chat_id = message.chat.id
     bot.send_message(chat_id, Usecases.easter_egg.handle(), reply_markup=Usecases.easter_egg.markup())
 
-bot.add_message_handler({
-            'function': Usecases.logger.log_message,
-            'filters':{}
-        })
+
+@bot.message_handler(func=Usecases.logger.predicate)
+def log_message(message):
+    Usecases.logger.log_message(message)
+
 
 # запускает бота
 bot.polling()
