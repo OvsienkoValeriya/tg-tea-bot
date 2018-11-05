@@ -19,9 +19,5 @@ def commands():
     return HELP_COMMAND
 
 
-def predicate(message):
-    return False
-
-
 def markup():
     return None

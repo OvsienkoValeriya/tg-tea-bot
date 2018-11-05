@@ -19,7 +19,3 @@ def markup():
 
 def commands():
     return WELCOME_COMMAND
-
-
-def predicate(message):
-    return False

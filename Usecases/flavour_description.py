@@ -23,9 +23,5 @@ predicate = make_word_in_list_predicate(
     [VEGAN, SWEET, BERRY, FRUIT, FLOWER, VEGETABLE, NUTS, SPICY, TREE])
 
 
-def commands():
-    return None
-
-
 def markup():
     return None

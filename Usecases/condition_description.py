@@ -15,9 +15,5 @@ def handle(message: str):
 predicate = make_word_in_list_predicate([ALIVE, QUIET])
 
 
-def commands():
-    return None
-
-
 def markup():
     return None

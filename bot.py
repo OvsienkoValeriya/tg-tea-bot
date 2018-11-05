@@ -16,14 +16,12 @@ bot = telebot.TeleBot(TOKEN)
 
 
 @bot.message_handler(commands=Usecases.help.commands())
-@bot.message_handler(func=Usecases.help.predicate)
 def send_help(message):
     chat_id = message.chat.id
     bot.send_message(chat_id, Usecases.help.handle(), reply_markup=Usecases.help.markup())
 
 
 @bot.message_handler(commands=Usecases.welcome.commands())
-@bot.message_handler(func=Usecases.welcome.predicate)
 def send_welcome(message):
     chat_id = message.chat.id
     bot.send_message(chat_id, Usecases.welcome.handle(), reply_markup=Usecases.welcome.markup())
@@ -39,7 +37,6 @@ def send_category_choose(message):
 
 # по категории. показывает текст после выбора
 @bot.message_handler(func=Usecases.category_description.predicate)
-@bot.message_handler(commands=Usecases.category_description.commands())
 def send_tea_menu_choose(message):
     chat_id = message.chat.id
     bot.send_message(chat_id, text=Usecases.category_description.handle(message.text),
@@ -56,7 +53,6 @@ def send_flavour_menu(message):
 
 # по вкусу. показывает текст после выбора
 @bot.message_handler(func=Usecases.flavour_description.predicate)
-@bot.message_handler(commands=Usecases.flavour_description.commands())
 def send_tea_flavour_choose(message):
     chat_id = message.chat.id
     bot.send_message(chat_id, text=Usecases.flavour_description.handle(message.text),
@@ -73,7 +69,6 @@ def send_predicate_menu(message):
 
 # по состоянию. показывает текст
 @bot.message_handler(func=Usecases.condition_description.predicate)
-@bot.message_handler(commands=Usecases.condition_description.commands())
 def send_tea_condition(message):
     chat_id = message.chat.id
     bot.send_message(chat_id, text=Usecases.condition_description.handle(message.text),

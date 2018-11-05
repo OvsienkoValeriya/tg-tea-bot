@@ -16,14 +16,10 @@ TEA_DESCRIPTION = {
 
 def handle(message: str):
     text = message.lower()
-    return TEA_DESCRIPTION.get(text, "Я вас не понимаю")
+    return TEA_DESCRIPTION[text]
 
 
 predicate = make_word_in_list_predicate([GREEN, WHITE, HELL_TURQUOIS, DARK_TURQUOIS, RED, SHEN, SHU, BLACK, YELLOW])
-
-
-def commands():
-    return None
 
 
 def markup():
