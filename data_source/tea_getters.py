@@ -2,7 +2,7 @@ from data_source import get_json
 
 
 def get_teas():
-    return get_json("tea_passport.json")["teas"]
+    return get_json("data_source/tea_passport.json")["teas"]
 
 
 # get teaProperties
