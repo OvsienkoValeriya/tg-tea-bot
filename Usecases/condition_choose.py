@@ -19,7 +19,7 @@ def markup():
     return fill_markup_with_words(markup, capitalize_all(tea_conditions))
 
 def get_condition_names():
-    flavours = get_conditions
+    conditions = get_conditions()
     names = map (get_name, conditions)
     return names
 
