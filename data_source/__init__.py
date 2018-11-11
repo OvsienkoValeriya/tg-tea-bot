@@ -60,14 +60,3 @@ def find(func, lst):
         if func(x)==True:
             return x
     return None
-
-# getFiles
-
-
-
-def get_flavours():
-    return get_json("category_description.json")["tea_flavour"]
-
-
-def get_conditions():
-    return get_json("category_description.json")["tea_condition"]
