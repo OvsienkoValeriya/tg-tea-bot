@@ -2,7 +2,7 @@ import random
 
 from Usecases import *
 from Usecases.category_choose import get_category_names
-from data_source import find, filter
+from data_source import find, filter, map
 from data_source.category_getters import *
 from data_source.tea_getters import *
 

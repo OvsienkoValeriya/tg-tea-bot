@@ -2,7 +2,7 @@ import random
 
 from Usecases import *
 from Usecases.condition_choose import get_condition_names
-from data_source import find, filter
+from data_source import find, filter, map
 from data_source.condition_getters import *
 from data_source.tea_getters import *
 
