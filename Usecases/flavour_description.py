@@ -1,26 +1,23 @@
 from Usecases import *
-from data_source import VEGAN, SWEET, BERRY, FRUIT, FLOWER,BREAD, NUTS, SPICY, TREE
+from data_source import find
+from Usecases.flavour_choose import get_flavour_names
+import random
+from data_source.flavour_getters import *
 
-TEA_FLAVOUR = {
-    VEGAN: "Пей зелёнку",
-    SWEET: "Любимый чай мамы - женьшень улун",
-    BERRY: "Шен",
-    FRUIT: "Почувствуйте сирень в Те Гуан Ине",
-    FLOWER: "Снова зеленка",
-    BREAD: "Шены-ваша судьба",
-    NUTS: "Пейте шу и будьте счастливы",
-    SPICY: "Темные улуны (их пьет Миша)",
-    TREE: "Шу - ваш выбор"
-}
 
+def find_flavour_by_name(name, flavours):
+    func = lambda flavour: flavour["name"] == name
+    return find(func, flavours)
 
 def handle(message: str):
     text = message.lower()
-    return TEA_FLAVOUR[text]
+    flavours = get_flavours()
+    target_category = find_flavour_by_name(text, flavours)
+    descriptions = target_category["description"]
+    return random.choice(descriptions)
 
 
-predicate = make_word_in_list_predicate(
-    [VEGAN, SWEET, BERRY, FRUIT, FLOWER, BREAD, NUTS, SPICY, TREE])
+predicate = make_word_in_list_predicate(get_flavour_names())
 
 
 def markup():

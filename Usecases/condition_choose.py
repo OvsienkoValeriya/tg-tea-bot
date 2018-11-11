@@ -1,5 +1,6 @@
 from Usecases import *
-from data_source import ALIVE, QUIET, TEA_CHOOSE_CONDITION
+from data_source import map, TEA_CHOOSE_CONDITION
+from data_source.condition_getters import *
 
 CONDITION_COMMAND = ['by_condition']
 
@@ -14,8 +15,12 @@ def commands():
 
 def markup():
     markup = types.ReplyKeyboardMarkup(row_width=2)
-    tea_conditions = [ALIVE, QUIET]
+    tea_conditions = get_condition_names()
     return fill_markup_with_words(markup, capitalize_all(tea_conditions))
 
+def get_condition_names():
+    flavours = get_conditions
+    names = map (get_name, conditions)
+    return names
 
 predicate = make_word_in_list_predicate([TEA_CHOOSE_CONDITION])
