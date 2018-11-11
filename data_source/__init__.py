@@ -1,0 +1,73 @@
+import json
+
+# VEGETABLE заменен на BREAD, BLACK заменен на GABA и расположен под тёмным улуном, YELLOW удален
+GREEN = "зелёный"
+WHITE = "белый"
+HELL_TURQUOIS = "светлый улун"
+DARK_TURQUOIS = "тёмный улун"
+GABA = "габа улун"
+RED = "красный"
+SHEN = "шен пуэр"
+SHU = "шу пуэр"
+
+TEA_CHOOSE_CATEGORY = "по категории"
+TEA_CHOOSE_FLAVOUR = "по вкусу"
+TEA_CHOOSE_CONDITION = "по состоянию"
+TEA_CHOOSE_RELATED = "по похожему"
+
+VEGAN = "растительный"
+SWEET = "сладко-кондитерский"
+BERRY = "кисло-ягодный"
+FRUIT = "фруктовый"
+FLOWER = "цветочный"
+BREAD = "хлебный"
+NUTS = "ореховый"
+SPICY = "пряный"
+TREE = "древесный"
+
+ALIVE = "бодрящий"
+QUIET = "успокаивающий"
+
+TEA_CONDITION = {
+    ALIVE: "пей шу и все остальные чаи",
+    QUIET: "габа - твой выбор"
+}
+
+
+# Utiles
+def get_json(filename):
+    with open(filename, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def map(func, lst):
+    new_lst=[]
+    for x in lst:
+        new_lst.append(func(x))
+    return new_lst
+
+def filter(func, lst):
+    new_lst=[]
+    for x in lst:
+        if func(x) == True:
+            new_lst.append(x)
+        else:
+            continue
+    return new_lst
+
+def find(func, lst):
+    for x in lst:
+        if func(x)==True:
+            return x
+    return None
+
+# getFiles
+
+
+
+def get_flavours():
+    return get_json("category_description.json")["tea_flavour"]
+
+
+def get_conditions():
+    return get_json("category_description.json")["tea_condition"]

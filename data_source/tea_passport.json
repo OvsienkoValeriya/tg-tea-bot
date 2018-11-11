@@ -1,0 +1,230 @@
+{
+  "teas": [
+    {
+      "name": "Лун Цзин",
+      "translation": "Колодец Дракона",
+      "category": "GREEN",
+      "flavour": [
+        "VEGAN",
+        "FLOWER",
+        "FRUIT"
+      ],
+      "condition": "ALIVE",
+      "description": "..."
+    },
+    {
+      "name": "Е Шен",
+      "translation": "Дикорастущий",
+      "category": "GREEN",
+      "flavour": [
+        "VEGAN",
+        "FLOWER",
+        "SWEET"
+      ],
+      "condition": "ALIVE",
+      "description": "..."
+    },
+    {
+      "name": "Би Ло Чунь",
+      "translation": "Изумрудные Спирали Весны",
+      "category": "GREEN",
+      "flavour": [
+        "VEGAN",
+        "FLOWER",
+        "NUTS"
+      ],
+      "condition": "ALIVE",
+      "description": "..."
+    },
+    {
+      "name": "Бай Хао Инь Чжэнь",
+      "translation": "Серебрянные Иглы с белым ворсом",
+      "category": "WHITE",
+      "flavour": [
+        "FLOWER",
+        "FRUIT",
+        "VEGAN"
+      ],
+      "condition": "ALIVE",
+      "description": "..."
+    },
+    {
+      "name": "Бай Му Дань",
+      "translation": "Белый Пион",
+      "category": "WHITE",
+      "flavour": [
+        "FLOWER",
+        "SPICY",
+        "VEGAN",
+        "BERRY"
+      ],
+      "condition": "ALIVE",
+      "description": "..."
+    },
+    {
+      "name": "Гун Мэй",
+      "translation": "Бровь - Подношение",
+      "category": "WHITE",
+      "flavour": [
+        "FLOWER",
+        "SPICY",
+        "VEGAN",
+        "BERRY"
+      ],
+      "condition": "ALIVE",
+      "description": "..."
+    },
+    {
+      "name": "Те Гуан Инь",
+      "translation": "Железная Богиня Бодхисаттва",
+      "category": "HELL_TURQUOIS",
+      "flavour": [
+        "FLOWER",
+        "BERRY",
+        "VEGAN"
+      ],
+      "condition": "ALIVE",
+      "description": "..."
+    },
+    {
+      "name": "Дун Дин",
+      "translation": "Улун с Морозного Пика",
+      "category": "HELL_TURQUOIS",
+      "flavour": [
+        "FRUIT",
+        "FLOWER",
+        "BERRY",
+        "SWEET"
+      ],
+      "condition": "ALIVE",
+      "description": "..."
+    },
+    {
+      "name": "Дун Фан Мэй Жень",
+      "translation": "Восточная Красавица",
+      "category": "HELL_TURQUOIS",
+      "flavour": [
+        "FLOWER",
+        "SWEET",
+        "SPICY",
+        "FRUIT"
+      ],
+      "condition": "ALIVE",
+      "description": "..."
+    },
+    {
+      "name": "Да Хун Пао",
+      "translation": "Больщой Красный Халат",
+      "category": "DARK_TURQUOIS",
+      "flavour": [
+        "SPICY",
+        "BREAD",
+        "TREE"
+      ],
+      "condition": "ALIVE",
+      "description": "..."
+    },
+    {
+      "name": "Фэн Хуан Дан Цун",
+      "translation": "Одинокий Куст с Горы Феникса",
+      "category": "DARK_TURQUOIS",
+      "flavour": [
+        "SPICY",
+        "SWEET",
+        "BREAD"
+      ],
+      "condition": "ALIVE",
+      "description": "..."
+    },
+    {
+      "name": "Жоу Гуй",
+      "translation": "Нефритовая Корица",
+      "category": "DARK_TURQUOIS",
+      "flavour": [
+        "SWEET",
+        "SPICY",
+        "BREAD"
+      ],
+      "condition": "ALIVE",
+      "description": "..."
+    },
+    {
+      "name": "Габа Алишань",
+      "translation": "Габа с горы Алишань",
+      "category": "GABA",
+      "flavour": [
+        "FRUIT",
+        "SWEET",
+        "BERRY"
+      ],
+      "condition": "QUIET",
+      "description": "..."
+    },
+    {
+      "name": "Габа Руби",
+      "translation": "Габа с использованием флешей сорта Руби",
+      "category": "GABA",
+      "flavour": [
+        "BREAD",
+        "TREE",
+        "SPICY",
+        "SWEET",
+        "BERRY"
+      ],
+      "condition": "QUIET",
+      "description": "..."
+    },
+    {
+      "name": "Цзинь Цзюнь Мэй",
+      "translation": "Золотые Брови",
+      "category": "RED",
+      "flavour": [
+        "SWEET",
+        "BERRY",
+        "SPICY"
+      ],
+      "condition": "ALIVE",
+      "description": "..."
+    },
+    {
+      "name": "Дянь Хун Мао Фэн",
+      "translation": "Ворсистые Пики",
+      "category": "RED",
+      "flavour": [
+        "SWEET",
+        "SPICY",
+        "FRUIT",
+        "BREAD",
+        "TREE"
+      ],
+      "condition": "ALIVE",
+      "description": "..."
+    },
+    {
+      "name": "Сяо Чжун Хун Ча",
+      "translation": "Малые Кусты",
+      "category": "RED",
+      "flavour": [
+        "TREE",
+        "FRUIT",
+        "SPICY"
+      ],
+      "condition": "ALIVE",
+      "description": "..."
+    },
+    {
+      "name": "Шен Пуэр Молодой",
+      "translation": "молодой светлый пуэр",
+      "category": "SHEN",
+      "flavour": [
+        "TREE",
+        "SWEET",
+        "VEGAN",
+        "NUTS",
+        "FRUIT"
+      ],
+      "condition": "ALIVE",
+      "description": "..."
+    }
+  ]
+}
