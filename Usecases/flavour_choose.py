@@ -1,6 +1,6 @@
 from telebot import types
 from Usecases import *
-from data_source import VEGAN, SWEET, BERRY, FRUIT, FLOWER, VEGETABLE, NUTS, SPICY, TREE, TEA_CHOOSE_FLAVOUR
+from data_source import VEGAN, SWEET, BERRY, FRUIT, FLOWER, BREAD, NUTS, SPICY, TREE, TEA_CHOOSE_FLAVOUR
 
 FLAVOUR_COMMAND = ["by_flavour"]
 
@@ -15,7 +15,7 @@ def commands():
 
 def markup():
     markup = types.ReplyKeyboardMarkup(row_width=3)
-    tea_flavours = [VEGAN, SWEET, BERRY, FRUIT, FLOWER, VEGETABLE, NUTS, SPICY, TREE]
+    tea_flavours = [VEGAN, SWEET, BERRY, FRUIT, FLOWER, BREAD, NUTS, SPICY, TREE]
     return fill_markup_with_words(markup, capitalize_all(tea_flavours))
 
 

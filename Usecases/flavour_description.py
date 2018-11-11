@@ -1,5 +1,5 @@
 from Usecases import *
-from data_source import VEGAN, SWEET, BERRY, FRUIT, FLOWER, VEGETABLE, NUTS, SPICY, TREE
+from data_source import VEGAN, SWEET, BERRY, FRUIT, FLOWER,BREAD, NUTS, SPICY, TREE
 
 TEA_FLAVOUR = {
     VEGAN: "Пей зелёнку",
@@ -7,7 +7,7 @@ TEA_FLAVOUR = {
     BERRY: "Шен",
     FRUIT: "Почувствуйте сирень в Те Гуан Ине",
     FLOWER: "Снова зеленка",
-    VEGETABLE: "Шены-ваша судьба",
+    BREAD: "Шены-ваша судьба",
     NUTS: "Пейте шу и будьте счастливы",
     SPICY: "Темные улуны (их пьет Миша)",
     TREE: "Шу - ваш выбор"
@@ -20,7 +20,7 @@ def handle(message: str):
 
 
 predicate = make_word_in_list_predicate(
-    [VEGAN, SWEET, BERRY, FRUIT, FLOWER, VEGETABLE, NUTS, SPICY, TREE])
+    [VEGAN, SWEET, BERRY, FRUIT, FLOWER, BREAD, NUTS, SPICY, TREE])
 
 
 def markup():

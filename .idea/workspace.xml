@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa8e5f14-5a35-4925-8c25-abfb96ba9fae" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data_source.py" afterPath="$PROJECT_DIR$/data_source/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Usecases/category_choose.py" afterPath="$PROJECT_DIR$/Usecases/category_choose.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Usecases/category_description.py" afterPath="$PROJECT_DIR$/Usecases/category_description.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Usecases/flavour_choose.py" afterPath="$PROJECT_DIR$/Usecases/flavour_choose.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Usecases/flavour_description.py" afterPath="$PROJECT_DIR$/Usecases/flavour_description.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,34 +29,14 @@
       <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_source/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="969">
               <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tea_getters.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_source/tea_getters.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tea_passport.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_source/tea_passport.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="category_description.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="category_description.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_source/category_description.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -74,6 +52,30 @@
             <state relative-caret-position="51">
               <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flavour_choose.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Usecases/flavour_choose.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="61" lean-forward="false" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flavour_description.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Usecases/flavour_description.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -152,14 +154,12 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_13.py" />
         <option value="$PROJECT_DIR$/pip-selfcheck.json" />
         <option value="$PROJECT_DIR$/Usecases/category_choose_usecase.py" />
-        <option value="$PROJECT_DIR$/Usecases/flavour_choose.py" />
         <option value="$PROJECT_DIR$/easter_egg.py" />
         <option value="$PROJECT_DIR$/data_source.py" />
         <option value="$PROJECT_DIR$/Usecases/condition_choose.py" />
         <option value="$PROJECT_DIR$/Usecases/sameness_choose_usecase.py" />
         <option value="$PROJECT_DIR$/Usecases/__init__.py" />
         <option value="$PROJECT_DIR$/Usecases/condition_description.py" />
-        <option value="$PROJECT_DIR$/Usecases/flavour_description.py" />
         <option value="$PROJECT_DIR$/Usecases/help.py" />
         <option value="$PROJECT_DIR$/Usecases/welcome.py" />
         <option value="$PROJECT_DIR$/Usecases/easter_egg.py" />
@@ -172,10 +172,12 @@
         <option value="$PROJECT_DIR$/Usecases/category_choose.py" />
         <option value="$PROJECT_DIR$/Usecases/category_description.py" />
         <option value="$PROJECT_DIR$/data_source/category_description.json" />
+        <option value="$PROJECT_DIR$/Usecases/flavour_choose.py" />
+        <option value="$PROJECT_DIR$/Usecases/flavour_description.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="728" />
@@ -289,7 +291,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -612,13 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Usecases/flavour_description.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Usecases/sameness_choose.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -667,14 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Usecases/flavour_choose.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/site-packages/telebot/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -706,14 +693,6 @@
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_source/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -764,6 +743,34 @@
         <state relative-caret-position="255">
           <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_source/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Usecases/flavour_choose.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="61" lean-forward="false" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Usecases/flavour_description.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
