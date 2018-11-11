@@ -16,7 +16,7 @@ def handle(message: str):
     categories = get_categories()
     target_category = find_category_by_name(text, categories)
     descriptions = target_category["description"]
-    return random.choise(descriptions)
+    return random.choice(descriptions)
 
 
 predicate = make_word_in_list_predicate(get_category_names())
