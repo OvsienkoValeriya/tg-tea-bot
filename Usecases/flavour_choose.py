@@ -20,7 +20,7 @@ def markup():
     return fill_markup_with_words(markup, capitalize_all(tea_flavours))
 
 def get_flavour_names():
-    flavours = get_flavours
+    flavours = get_flavours()
     names = map (get_name, flavours)
     return names
 
