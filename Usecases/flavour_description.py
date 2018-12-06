@@ -23,7 +23,7 @@ def handle(message: str):
 def render_flavours(flavour):
     teas = get_teas()
     flavour_id = get_id(flavour)
-    filtered_teas = filter(lambda tea: get_flavour(tea) == flavour_id, teas)
+    filtered_teas = filter(lambda tea: flavour_id in get_flavour(tea), teas)
     tea_names = map(get_name, filtered_teas)
     random.shuffle(tea_names)
 
