@@ -2,7 +2,7 @@ import random
 
 from Usecases import *
 from Usecases.category_choose import get_category_names
-from data_source import find, filter, map
+from data_source import find, filter
 from data_source.category_getters import *
 from data_source.tea_getters import *
 
@@ -24,10 +24,8 @@ def render_tea(category):
     teas = get_teas()
     category_id = get_id(category)
     filtered_teas = filter(lambda tea: get_category(tea) == category_id, teas)
-    tea_names = map(get_name, filtered_teas)
-    random.shuffle(tea_names)
-
-    return "Попробуйте " + tea_names[0]
+    tea = random.choice(filtered_teas)
+    return "Попробуйте " + get_name(tea) + ".\n" + get_description(tea)
 
 
 predicate = make_word_in_list_predicate(get_category_names())

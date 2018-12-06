@@ -2,7 +2,7 @@ import random
 
 from Usecases import *
 from Usecases.flavour_choose import get_flavour_names
-from data_source import find, map, filter
+from data_source import find, filter
 from data_source.flavour_getters import *
 from data_source.tea_getters import *
 
@@ -24,10 +24,8 @@ def render_flavours(flavour):
     teas = get_teas()
     flavour_id = get_id(flavour)
     filtered_teas = filter(lambda tea: flavour_id in get_flavour(tea), teas)
-    tea_names = map(get_name, filtered_teas)
-    random.shuffle(tea_names)
-
-    return "Попробуйте " + tea_names[0]
+    tea = random.choice(filtered_teas)
+    return "Попробуйте " + get_name(tea) + ".\n" + get_description(tea)
 
 
 predicate = make_word_in_list_predicate(get_flavour_names())
