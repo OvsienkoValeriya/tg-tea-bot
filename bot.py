@@ -1,17 +1,19 @@
+import os
+
 import telebot
+
 import Usecases.category_choose
 import Usecases.category_description
-import Usecases.condition_choose
-import Usecases.condition_description
 import Usecases.easter_egg
 import Usecases.flavour_choose
 import Usecases.flavour_description
 import Usecases.help
-import Usecases.welcome
-import Usecases.sameness_choose
 import Usecases.logger
+import Usecases.random_choose
+import Usecases.sameness_choose
+import Usecases.welcome
 
-TOKEN = "789845045:AAF4GvK-9DYhedra0Vc47ZPKku93KjNmUAQ"
+TOKEN = os.environ["BOT_TOKEN"]
 bot = telebot.TeleBot(TOKEN)
 
 
@@ -60,19 +62,11 @@ def send_tea_flavour_choose(message):
 
 
 # по состоянию
-@bot.message_handler(commands=Usecases.condition_choose.commands())
-@bot.message_handler(func=Usecases.condition_choose.predicate)
+@bot.message_handler(commands=Usecases.random_choose.commands())
+@bot.message_handler(func=Usecases.random_choose.predicate)
 def send_predicate_menu(message):
     chat_id = message.chat.id
-    bot.send_message(chat_id, Usecases.condition_choose.handle(), reply_markup=Usecases.condition_choose.markup())
-
-
-# по состоянию. показывает текст
-@bot.message_handler(func=Usecases.condition_description.predicate)
-def send_tea_condition(message):
-    chat_id = message.chat.id
-    bot.send_message(chat_id, text=Usecases.condition_description.handle(message.text),
-                     reply_markup=Usecases.condition_description.markup())
+    bot.send_message(chat_id, Usecases.random_choose.handle(), reply_markup=Usecases.random_choose.markup())
 
 
 # по похожему
@@ -95,9 +89,11 @@ def send_easter_egg(message):
 def log_message(message):
     Usecases.logger.log_unresolved_message(message)
 
+
 def log_all(messages):
     for message in messages:
         Usecases.logger.log_message(message)
+
 
 bot.set_update_listener(log_all)
 

@@ -12,7 +12,7 @@ SHU = "шу пуэр"
 
 TEA_CHOOSE_CATEGORY = "по категории"
 TEA_CHOOSE_FLAVOUR = "по вкусу"
-TEA_CHOOSE_CONDITION = "по состоянию"
+TEA_CHOOSE_RANDOM = "мне повезёт"
 TEA_CHOOSE_RELATED = "по похожему"
 
 VEGAN = "растительный"

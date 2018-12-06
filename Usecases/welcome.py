@@ -1,4 +1,4 @@
-from data_source import TEA_CHOOSE_CATEGORY, TEA_CHOOSE_FLAVOUR, TEA_CHOOSE_CONDITION, TEA_CHOOSE_RELATED
+from data_source import TEA_CHOOSE_CATEGORY, TEA_CHOOSE_FLAVOUR, TEA_CHOOSE_RANDOM, TEA_CHOOSE_RELATED
 from telebot import types
 from Usecases import *
 
@@ -13,7 +13,7 @@ def handle():
 
 def markup():
     markup = types.ReplyKeyboardMarkup(row_width=2)
-    tea_choose = [TEA_CHOOSE_CATEGORY, TEA_CHOOSE_FLAVOUR, TEA_CHOOSE_CONDITION, TEA_CHOOSE_RELATED]
+    tea_choose = [TEA_CHOOSE_CATEGORY, TEA_CHOOSE_FLAVOUR, TEA_CHOOSE_RANDOM, TEA_CHOOSE_RELATED]
     return fill_markup_with_words(markup, capitalize_all(tea_choose))
 
 
