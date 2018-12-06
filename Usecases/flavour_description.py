@@ -2,7 +2,7 @@ import random
 
 from Usecases import *
 from Usecases.flavour_choose import get_flavour_names
-from data_source import find, map, filter 
+from data_source import find, map, filter
 from data_source.flavour_getters import *
 from data_source.tea_getters import *
 
