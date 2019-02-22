@@ -25,7 +25,7 @@ def handle(id, message: str):
 
 def remember_tea(id, tea):
     update_user(id, get_name(tea))
-    
+
 
 def random_tea(flavours):
     teas = get_teas()

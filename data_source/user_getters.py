@@ -17,7 +17,7 @@ def get_user(id):
 def update_user(id, new_tea):
     user = get_user(id)
     if user is not None:
-        tea_list = user["tea_list"] + new_tea
+        tea_list = user["tea_list"] + [new_tea]
         delete_user(id)
         insert_user(id, tea_list)
     else:
