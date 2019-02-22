@@ -12,12 +12,12 @@ def commands():
 
 def handle(id, message: str, callback):
     if id == admin_id:
-        send_messages(id, message, callback)
+        send_messages(message, callback)
         return "Сообщение отправлено"
     else:
         return None
 
 
-def send_messages(ids, message: str, callback):
+def send_messages(message: str, callback):
     user_ids = get_users()
     callback(message, user_ids)

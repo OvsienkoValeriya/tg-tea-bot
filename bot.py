@@ -79,7 +79,7 @@ def send_sorry(message):
 
 def send_messages(message, user_ids):
     for id in user_ids:
-        bot.send_message(id, message)
+        bot.send_message(id, "test")
 
 # рассылка
 @bot.message_handler(commands=Usecases.push_message.commands())
