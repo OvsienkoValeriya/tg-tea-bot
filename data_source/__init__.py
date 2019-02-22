@@ -1,4 +1,9 @@
 import json
+from pymongo import MongoClient
+import os
+
+MongoDBURL=os.environ["DB_URL"]
+client=MongoClient(MongoDBURL)
 
 # VEGETABLE заменен на BREAD, BLACK заменен на GABA и расположен под тёмным улуном, YELLOW удален
 GREEN = "зелёный"
