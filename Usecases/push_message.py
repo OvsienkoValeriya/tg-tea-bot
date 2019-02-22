@@ -11,7 +11,7 @@ def commands():
 
 
 def handle(id, message: str, callback):
-    if id == admin_id:
+    if str(id) == admin_id:
         send_messages(message, callback)
         return "Сообщение отправлено"
     else:
