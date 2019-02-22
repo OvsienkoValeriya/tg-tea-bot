@@ -41,7 +41,7 @@ def send_category_choose(message):
 @bot.message_handler(func=Usecases.category_description.predicate)
 def send_tea_menu_choose(message):
     chat_id = message.chat.id
-    bot.send_message(chat_id, text=Usecases.category_description.handle(message.text),
+    bot.send_message(chat_id, text=Usecases.category_description.handle(chat_id, message.text),
                      reply_markup=Usecases.category_description.markup())
 
 
