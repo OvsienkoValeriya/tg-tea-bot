@@ -61,12 +61,12 @@ def send_tea_flavour_choose(message):
                      reply_markup=Usecases.flavour_description.markup())
 
 
-# по состоянию
+# по воле божьей
 @bot.message_handler(commands=Usecases.random_choose.commands())
 @bot.message_handler(func=Usecases.random_choose.predicate)
 def send_predicate_menu(message):
     chat_id = message.chat.id
-    bot.send_message(chat_id, Usecases.random_choose.handle(), reply_markup=Usecases.random_choose.markup())
+    bot.send_message(chat_id, Usecases.random_choose.handle(chat_id), reply_markup=Usecases.random_choose.markup())
 
 
 # по похожему
