@@ -14,7 +14,7 @@ def handle(id):
     return "Попробуйте " + get_name(tea) + "\n" + get_description(tea)
 
 def remember_tea(id, tea):
-    update_user(id, tea)
+    update_user(id, get_name (tea))
 
 
 def commands():
