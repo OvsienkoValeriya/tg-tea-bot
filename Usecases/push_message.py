@@ -15,7 +15,7 @@ def handle(id, message: str, callback):
         send_messages(message, callback)
         return "Сообщение отправлено"
     else:
-        return None
+        return "Access denied"
 
 
 def send_messages(message: str, callback):
