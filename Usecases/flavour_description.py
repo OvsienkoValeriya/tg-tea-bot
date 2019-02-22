@@ -37,7 +37,7 @@ def random_tea(flavours):
     return tea
 
 
-def render_flavours(flavour):
+def render_flavours(tea):
     return "Попробуйте " + get_name(tea) + ".\n" + get_description(tea)
 
 
