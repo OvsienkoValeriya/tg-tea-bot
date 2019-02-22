@@ -7,9 +7,10 @@ from data_source.tea_getters import *
 RANDOM_COMMAND = ['random']
 
 
-def handle():
+def handle(id, message:str):
     teas = get_teas()
     tea = random.choice(teas)
+
     return "Попробуйте " + get_name(tea) + "\n" + get_description(tea)
 
 

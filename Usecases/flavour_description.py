@@ -31,8 +31,8 @@ def remember_tea(id, tea):
 def random_tea(flavours):
     print("flavour" + flavours)
     teas = get_teas()
-    category_id = get_id(flavours)
-    filtered_teas = filter(lambda tea: get_category(tea) == category_id, teas)
+    flavours_id = get_id(flavours)
+    filtered_teas = filter(lambda tea: get_flavour(tea) == flavours_id, teas)
     tea = random.choice(filtered_teas)
     return tea
 
