@@ -19,6 +19,7 @@ def handle(id, message: str):
     target_flavour = find_flavour_by_name(text, flavours)
     descriptions = target_flavour["description"]
     tea = random_tea(target_flavour)
+
     remember_tea(id, tea)
     return random.choice(descriptions) + "\n" + render_flavours(target_flavour)
 
@@ -28,6 +29,7 @@ def remember_tea(id, tea):
 
 
 def random_tea(flavours):
+    print("flavour" + flavours)
     teas = get_teas()
     category_id = get_id(flavours)
     filtered_teas = filter(lambda tea: get_category(tea) == category_id, teas)
