@@ -29,7 +29,7 @@ def remember_tea(id, tea):
 
 
 def random_tea(flavours):
-    print("flavour" + flavours)
+    
     teas = get_teas()
     flavours_id = get_id(flavours)
     filtered_teas = filter(lambda tea: get_flavour(tea) == flavours_id, teas)
