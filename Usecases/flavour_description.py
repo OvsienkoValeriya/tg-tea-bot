@@ -21,7 +21,7 @@ def handle(id, message: str):
     tea = random_tea(target_flavour)
 
     remember_tea(id, tea)
-    return random.choice(descriptions) + "\n" + render_flavours(target_flavour)
+    return random.choice(descriptions) + "\n" + render_flavours(tea)
 
 
 def remember_tea(id, tea):
