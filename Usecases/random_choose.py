@@ -1,5 +1,5 @@
 import random
-
+from data_source.user_getters import update_user
 from Usecases import *
 from data_source import TEA_CHOOSE_RANDOM
 from data_source.tea_getters import *
@@ -7,11 +7,14 @@ from data_source.tea_getters import *
 RANDOM_COMMAND = ['random']
 
 
-def handle(id, message:str):
+def handle(id):
     teas = get_teas()
     tea = random.choice(teas)
-
+    remember_tea(id,tea)
     return "Попробуйте " + get_name(tea) + "\n" + get_description(tea)
+
+def remember_tea(id, tea):
+    update_user(id, tea)
 
 
 def commands():

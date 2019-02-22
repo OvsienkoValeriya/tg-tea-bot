@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa8e5f14-5a35-4925-8c25-abfb96ba9fae" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Usecases/flavour_description.py" afterPath="$PROJECT_DIR$/Usecases/flavour_description.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Usecases/random_choose.py" afterPath="$PROJECT_DIR$/Usecases/random_choose.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,10 +48,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flavour_description.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="flavour_description.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Usecases/flavour_description.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="595">
               <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -60,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="random_choose.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="random_choose.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Usecases/random_choose.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="476">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -184,8 +184,8 @@
         <option value="$PROJECT_DIR$/data_source/__init__.py" />
         <option value="$PROJECT_DIR$/data_source/user_getters.py" />
         <option value="$PROJECT_DIR$/bot.py" />
-        <option value="$PROJECT_DIR$/Usecases/random_choose.py" />
         <option value="$PROJECT_DIR$/Usecases/flavour_description.py" />
+        <option value="$PROJECT_DIR$/Usecases/random_choose.py" />
       </list>
     </option>
   </component>
@@ -718,16 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Usecases/random_choose.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Usecases/category_description.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -748,8 +738,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Usecases/flavour_description.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="595">
           <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Usecases/random_choose.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
