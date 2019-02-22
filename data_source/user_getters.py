@@ -1,6 +1,6 @@
 from data_source import *
 
-USERS = client["mydb"]["users"]
+USERS = client.get_database()["users"]
 
 
 def insert_user(id, tea_list):
