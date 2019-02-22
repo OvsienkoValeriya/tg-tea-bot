@@ -12,6 +12,7 @@ import Usecases.logger
 import Usecases.random_choose
 import Usecases.sameness_choose
 import Usecases.welcome
+import Usecases.push_message
 
 TOKEN = os.environ["BOT_TOKEN"]
 bot = telebot.TeleBot(TOKEN)
@@ -75,6 +76,16 @@ def send_predicate_menu(message):
 def send_sorry(message):
     chat_id = message.chat.id
     bot.send_message(chat_id, Usecases.sameness_choose.handle(), reply_markup=Usecases.sameness_choose.markup())
+
+def send_messages(message, user_ids):
+    for id in user_ids:
+        bot.send_message(id, message)
+
+# рассылка
+@bot.message_handler(commands=Usecases.push_message.commands())
+def messages(message):
+    chat_id = message.chat.id
+    bot.send_message(chat_id, Usecases.push_message.handle(id, message.text, send_messages ))
 
 
 # пасхалка

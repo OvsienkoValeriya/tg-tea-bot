@@ -27,3 +27,7 @@ def update_user(id, new_tea):
 def delete_user(id):
     user_query = {"_id": id}
     USERS.delete_one(user_query)
+
+
+def get_users():
+    return map(lambda user:user["_id"], USERS.find())
