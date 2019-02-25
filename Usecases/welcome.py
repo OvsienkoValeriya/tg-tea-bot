@@ -4,11 +4,13 @@ from Usecases import *
 
 WELCOME = "Сегодня прекрасный день. Как вам подобрать чай?"
 
+WELCOME_BACK = "Напиши \"Чай\" чтобы вернуться в начало"
+
 WELCOME_COMMAND = ["start"]
 
 
 def handle():
-    return WELCOME
+    return [WELCOME, WELCOME_BACK]
 
 
 def markup():
@@ -19,3 +21,6 @@ def markup():
 
 def commands():
     return WELCOME_COMMAND
+
+
+predicate = make_word_in_list_predicate(["Чай"])

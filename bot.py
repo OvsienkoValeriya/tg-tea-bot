@@ -25,9 +25,10 @@ def send_help(message):
 
 
 @bot.message_handler(commands=Usecases.welcome.commands())
+@bot.message_handler(func=Usecases.welcome.predicate)
 def send_welcome(message):
     chat_id = message.chat.id
-    bot.send_message(chat_id, Usecases.welcome.handle(), reply_markup=Usecases.welcome.markup())
+    send_multiple_messages(chat_id, Usecases.welcome.handle(), markup=Usecases.welcome.markup())
 
 
 # по категории. показывает меню
@@ -105,6 +106,9 @@ def log_all(messages):
     for message in messages:
         Usecases.logger.log_message(message)
 
+def send_multiple_messages(chat_id, messages, markup):
+    for message in messages:
+        bot.send_message(chat_id, message, reply_markup=markup)
 
 bot.set_update_listener(log_all)
 
