@@ -23,4 +23,4 @@ def commands():
     return WELCOME_COMMAND
 
 
-predicate = make_word_in_list_predicate(["Чай"])
+predicate = make_word_in_list_predicate(["чай"])
